@@ -9,6 +9,15 @@ body {
   background: rgb(184, 199, 141);
 }
 
+/*
+
+ 1. section1.
+ 2. section2.
+
+*/
+
+/*1. section1.*/
+
 #section1 {
   width: 100%;
   background-position: center;
@@ -61,11 +70,11 @@ body {
   text-decoration: none;
   background-color: rgb(114, 135, 174);
   color: #fff;
-  padding: 10px 50px;
+  padding: 20px 60px;
   font-size: 20px;
   letter-spacing: 3px;
   font-weight: 500;
-  border-radius: 25px;
+  border-radius: 35px;
 }
 
 #showMore:hover {
@@ -104,4 +113,41 @@ body {
   bottom: 0;
   right: 0;
   z-index: -1;
+}
+
+/*2. section2.*/
+
+.sec2BigImg img {
+  width: 100%;
+}
+
+.sec2Txt {
+  background: #fff;
+}
+
+#sec2readMore {
+  text-decoration: none;
+  background-color: rgb(114, 135, 174);
+  color: #fff;
+  padding: 20px 60px;
+  font-size: 20px;
+  letter-spacing: 3px;
+  font-weight: 500;
+  border-radius: 35px;
+}
+
+#sec2readMore:hover {
+  background-color: rgb(65, 102, 170);
+}
+
+.sec2Txt h2 {
+  font-size: 50px;
+  font-weight: 700;
+  color: #505050;
+}
+
+.sec2Txt p {
+  font-size: 20px;
+  font-weight: 500;
+  color: #505050;
 }

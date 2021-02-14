@@ -97,7 +97,7 @@
 
           <!-- Header div -->
           <div
-            class="py-3 my-3 hdrDiv w-100 d-flex flex-column align-items-center justify-content-center"
+            class="py-4 my-4 hdrDiv w-100 d-flex flex-column align-items-center justify-content-center"
           >
             <h1
               class="py-2 text-white d-none d-lg-block display-1 w-75 text-center"
@@ -139,9 +139,37 @@
               </div>
             </div>
 
-            <div class="w-100 py-5">
-              <a href="#" id="showMore">SHOW MORE</a
-              ><img id="sec1Bg_2" src="img/section1/bg_2.png" alt="bg_2" />
+            <div class="w-100 py-5 mb-5">
+              <a href="#" id="showMore" class="mb-5">SHOW MORE</a
+              ><img
+                class="mb-5"
+                id="sec1Bg_2"
+                src="img/section1/bg_2.png"
+                alt="bg_2"
+              />
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Section2 -->
+      <div id="section2" class="row m-0 p-0">
+        <div
+          v-for="(val, index) in data.section2.banner"
+          :key="index"
+          class="col-sm-12 m-0 p-0"
+        >
+          <div class="row w-100 m-0 p-0">
+            <div :class="val.class1">
+              <img :src="val.src" :alt="val.alt" />
+            </div>
+
+            <div :class="val.class2">
+              <h2 class="text-left px-4 my-3">{{ val.h2 }}</h2>
+              <p class="text-left px-4 my-3">{{ val.p }}</p>
+              <a id="sec2readMore" class="text-left m-3" :href="val.a"
+                >READ MORE</a
+              >
             </div>
           </div>
         </div>
