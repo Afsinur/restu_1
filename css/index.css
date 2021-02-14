@@ -1,0 +1,107 @@
+* {
+  margin: 0;
+  padding: 0;
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen,
+    Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
+}
+
+body {
+  background: rgb(184, 199, 141);
+}
+
+#section1 {
+  width: 100%;
+  background-position: center;
+  background-size: cover;
+}
+
+#sec1-bg {
+  position: absolute;
+  width: 100%;
+  z-index: -1;
+}
+
+.nav-link {
+  font-size: larger;
+  font-weight: 500;
+  margin: 0 10px;
+}
+
+.nav-link:hover {
+  filter: brightness(0.8);
+}
+
+.navbar-brand img {
+  width: 250px;
+}
+
+.navbar-toggler {
+  background-color: #fff !important;
+}
+
+.hdrDiv h1 {
+  font-weight: 700;
+}
+
+.hdrDiv p {
+  font-weight: 500;
+}
+
+.ppm {
+  text-align: center;
+  position: relative;
+}
+
+.ppm p {
+  color: rgb(114, 135, 174);
+  font-weight: 700;
+}
+
+#showMore {
+  text-decoration: none;
+  background-color: rgb(114, 135, 174);
+  color: #fff;
+  padding: 10px 50px;
+  font-size: 20px;
+  letter-spacing: 3px;
+  font-weight: 500;
+  border-radius: 25px;
+}
+
+#showMore:hover {
+  background-color: rgb(65, 102, 170);
+}
+
+.topNoodles {
+  background: #f8f7ef;
+  margin: 35px;
+}
+
+.topNoodles img {
+  width: 100%;
+}
+
+.topNoodles h5 {
+  font-weight: 700;
+  font-size: 30px;
+  color: #505050;
+  padding: 0 25px;
+  width: 100%;
+  text-align: left;
+}
+
+.topNoodles p {
+  font-weight: 500;
+  font-size: 20px;
+  color: #505050;
+  padding: 0 25px;
+  width: 100%;
+  text-align: left;
+}
+
+#sec1Bg_2 {
+  position: absolute;
+  bottom: 0;
+  right: 0;
+  z-index: -1;
+}
