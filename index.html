@@ -24,7 +24,7 @@
     <div id="app">
       <!-- Section1 -->
       <div id="section1">
-        <img id="sec1-bg" :src="data.section1.img" :alt="data.section1.alt" />
+        <img id="sec1-bg" :src="data.section1.img1" :alt="data.section1.alt1" />
 
         <div class="container">
           <!-- Navbar -->
@@ -144,8 +144,8 @@
               ><img
                 class="mb-5"
                 id="sec1Bg_2"
-                src="img/section1/bg_2.png"
-                alt="bg_2"
+                :src="data.section1.img2"
+                :alt="data.section1.alt2"
               />
             </div>
           </div>
@@ -162,6 +162,11 @@
           <div class="row w-100 m-0 p-0">
             <div :class="val.class1">
               <img :src="val.src" :alt="val.alt" />
+              <img
+                id="sec2AboluteImg"
+                :src="val.aboluteSrc"
+                :alt="val.aboluteAlt"
+              />
             </div>
 
             <div :class="val.class2">
@@ -172,6 +177,58 @@
               >
             </div>
           </div>
+        </div>
+      </div>
+
+      <!-- Section3 -->
+      <div
+        id="section3"
+        class="row m-0 p-0 py-5 d-flex flex-column align-items-center justify-content-center"
+      >
+        <div class="container">
+          <div class="col-12 my-5">
+            <h2 class="text-center my-5">HOW TO ORDER</h2>
+          </div>
+
+          <div
+            class="col-12 d-flex flex-row align-items-center justify-content-center flex-md-nowrap flex-wrap"
+          >
+            <div
+              v-for="(val, index) in data.section3.order"
+              :key="index"
+              class="w-100 px-3 my-3 sec3UnderOrderCount"
+            >
+              <span>{{ val.orderCount }}</span>
+
+              <h2 class="my-3">{{ val.h2 }}</h2>
+
+              <p class="my-3">{{ val.p }}</p>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Section4 -->
+      <div
+        v-for="(val, index) in data.section4.info"
+        :key="index"
+        id="section4"
+        class="row m-0 p-0"
+      >
+        <div class="col-12 m-0 p-0 my-5">
+          <span class="mt-md-5 mt-0"></span>
+
+          <h2 class="my-3 px-md-5 px-1 mt-5 mt-md-5 mt-3">{{ val.h2 }}</h2>
+
+          <p class="my-3 px-md-5 px-1">{{ val.p }}</p>
+
+          <a class="my-3 mb-md-5 mb-3" :href="val.a">GET VOUCHER</a>
+
+          <span class="mb-md-5 mb-0"></span>
+
+          <img id="sec4_topL" :src="val.img1" :alt="val.alt1" />
+
+          <img id="sec4_bottomR" :src="val.img3" :alt="val.alt3" />
         </div>
       </div>
     </div>
