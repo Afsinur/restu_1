@@ -6,7 +6,7 @@
 }
 
 body {
-  background: rgb(189, 202, 154);
+  background: rgb(190, 202, 158);
 }
 
 /*
@@ -15,6 +15,7 @@ body {
  2. section2.
  3. section3.
  4. section4.
+ 5. section5.
 
 */
 
@@ -50,10 +51,12 @@ body {
 
 .hdrDiv h1 {
   font-weight: 700;
+  z-index: 3;
 }
 
 .hdrDiv p {
   font-weight: 500;
+  z-index: 3;
 }
 
 .ppm {
@@ -62,8 +65,9 @@ body {
 }
 
 .ppm p {
-  color: rgb(114, 135, 174);
+  color: rgb(72, 105, 168);
   font-weight: 700;
+  z-index: 3;
 }
 
 #showMore {
@@ -75,6 +79,7 @@ body {
   letter-spacing: 3px;
   font-weight: 500;
   border-radius: 35px;
+  z-index: 3;
 }
 
 #showMore:hover {
@@ -97,6 +102,7 @@ body {
   padding: 0 25px;
   width: 100%;
   text-align: left;
+  z-index: 3;
 }
 
 .topNoodles p {
@@ -106,6 +112,7 @@ body {
   padding: 0 25px;
   width: 100%;
   text-align: left;
+  z-index: 3;
 }
 
 #sec1Bg_2 {
@@ -119,6 +126,7 @@ body {
 
 .sec2BigImg img {
   width: 100%;
+  z-index: 2;
 }
 
 .sec2Txt {
@@ -134,6 +142,7 @@ body {
   letter-spacing: 3px;
   font-weight: 500;
   border-radius: 35px;
+  z-index: 3;
 }
 
 #sec2readMore:hover {
@@ -144,13 +153,14 @@ body {
   font-size: 50px;
   font-weight: 700;
   color: #505050;
-  z-index: 2;
+  z-index: 3;
 }
 
 .sec2Txt p {
   font-size: 20px;
   font-weight: 500;
   color: #505050;
+  z-index: 3;
 }
 
 #sec2AboluteImg {
@@ -189,6 +199,7 @@ body {
   align-items: center;
   justify-content: center;
   justify-content: center;
+  z-index: 3;
 }
 
 .sec3UnderOrderCount h2,
@@ -196,13 +207,14 @@ body {
   font-size: 50px;
   font-weight: 700;
   text-align: center;
+  z-index: 3;
 }
 
 .sec3UnderOrderCount p {
   font-size: 20px;
   font-weight: 500;
   text-align: center;
-  z-index: 2;
+  z-index: 3;
 }
 
 /*4. section4.*/
@@ -245,11 +257,13 @@ body {
 #section4 h2 {
   font-weight: 700;
   font-size: 60px;
+  z-index: 3;
 }
 
 #section4 p {
   font-weight: 500;
   font-size: 26px;
+  z-index: 3;
 }
 
 #section4 a {
@@ -266,3 +280,83 @@ body {
 #section4 a:hover {
   background-color: rgb(65, 102, 170);
 }
+
+/*5. section5.*/
+
+#section5 h2,
+#section5 h3,
+#section5 p {
+  color: rgb(72, 105, 168);
+  z-index: 3;
+}
+
+#section5 h2 {
+  font-weight: 700;
+  font-size: 150px;
+}
+
+#section5 h3 {
+  font-weight: 700;
+  font-size: 45px;
+}
+
+#section5 p {
+  font-weight: 500;
+  font-size: 26px;
+}
+
+#sec5underD2 ul li {
+  list-style: none;
+}
+
+#sec5underD2 ul li a {
+  text-decoration: none;
+  z-index: 3;
+}
+
+#sec5underD2 ul li a:hover {
+  filter: brightness(0.8);
+}
+
+#sec5underD2 ul img {
+  width: 50px;
+}
+
+#sec5underD2 {
+  position: relative;
+  width: 100%;
+  background-position: center;
+  background-size: cover;
+}
+
+.manyUl h2 {
+  font-size: 24px !important;
+  color: #fff !important;
+  z-index: 3;
+}
+
+.manyUl p {
+  font-size: 20px !important;
+  color: #fff !important;
+  z-index: 3;
+}
+
+.manyUl ul li {
+  list-style: none;
+}
+
+.manyUl ul li a {
+  text-decoration: none;
+  font-size: 20px !important;
+  color: #fff !important;
+  z-index: 3;
+}
+
+#sec5BtL {
+  position: absolute;
+  top: 100px;
+  left: 0;
+  width: 200px;
+}
+
+
