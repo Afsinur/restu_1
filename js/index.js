@@ -43,8 +43,12 @@ const app = {
 
               markH1.innerHTML = this.data.section.id;
 
-              Object.assign(mark.style, this.data.section.style1);
-              Object.assign(markH1.style, this.data.section.style2);
+              setInterval(() => {
+                if (document.querySelector("#mark") != null) {
+                  Object.assign(mark.style, this.data.section.style1);
+                  Object.assign(markH1.style, this.data.section.style2);
+                }
+              }, 1000);
             }
           }, 5000);
         }
